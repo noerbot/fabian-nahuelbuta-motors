@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTÁCTENOS</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav"><a href="../index.html">
+            <h1><img class= "logo" src="../imagenes/logo30.jpg" alt="logo"></h1></a>
+                <ul>
+                    <li><a href="nosotros.html"><strong>NOSOTROS</strong></a></li>
+                    <li><a href="servicios.html"><strong>SERVICIOS</strong></a></li>
+                    <li><a href="contenidos.html"><strong>CONTENIDOS</strong> </a></li>
+                    <li><a href="contactenos.html"><strong>CONTÁCTENOS</strong></a></li>    
+                </ul>
+        </nav>     
+    </header>
+   <br>
+    <h1>CONTÁCTENOS</h1>
+    
+    <hr><br><br>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>HABLEMOS</legend>
+            <br>
+            <div>
+                <label for="Preferencia">Cómo deseas ser contactado:</label>
+                <input type="radio" name="Preferencia" id="Preferencia" value="Whatsapp" required>Whatsapp
+                <input type="radio" name="Preferencia" id="Preferencia" value="E-Mail" required>E-Mail
+            </div>
+            <br>
+            <div>
+                <label for="infoName">Nombre y Apellido</label>
+                <input type="text" name="infoName" id="infoName" placeholder="Introduzca su nombre">
+            </div>
+            <br>
+            <div>
+                <label for="infoMail">E-Mail</label>
+                <input type="email" name="infoMail" id="infoMail" placeholder="Introduzca su E-mail">
+            </div>
+            <br>
+            <div>
+                <label for="infoWsp">Whatsapp</label>
+                <input type="wsp" name="infoWsp" id="infoWsp" placeholder="Introduzca su Whatsapp">
+            </div>
+            <br>
+            <div>
+                <label for="infoServicio">Qué servicio necesitas:</label>
+                <select name="infoServicio" id="inforServicio">
+                    <option value="Seleccione" disabled selected>Seleccione</option>
+                    <option value="taller">Mecanica de Presición</option>
+                    <option value="terreno">Asistencia en Terreno</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="infoLegal">Acepta Terminos y Condiciones:</label>
+                <input type="checkbox" name="infoLegal" id="infoLegal" value="1">
+               
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+    
+    <div>
+        <img class="imagenPortada" src="./imagenes/logo1.jpg" alt="logo1"</span> 
+    </div>
+
+    
+    <footer class="piePagina"> ><strong>Todos los derechos reservados.</strong></footer>
+</body>
+</html>
+
