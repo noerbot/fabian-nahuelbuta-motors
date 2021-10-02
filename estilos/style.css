@@ -86,14 +86,11 @@ li {
 
 /*Servicios*/
 h2{
-    text-align: center;
+    text-align: left;
     padding: 20px;
     margin: 10px;
     margin-top: 0px;
-    color: rgb(51, 39, 39);
-    background-color: aliceblue;
-
-    
+    color: rgb(245, 208, 2);
 }
 
 /*Parrafos en la pagina NOSOTROS*/
