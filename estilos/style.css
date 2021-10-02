@@ -8,9 +8,12 @@
 /*Body*/
 body{
     justify-content: flex-end;
-    background-color:rgb(56, 85, 48);
+    background: rgb(34,26,62);
+    background: -moz-linear-gradient(83deg, rgba(34,26,62,1) 25%, rgba(135,135,131,1) 100%, rgba(180,180,59,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    background: -webkit-linear-gradient(83deg, rgba(34,26,62,1) 25%, rgba(135,135,131,1) 100%, rgba(180,180,59,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    background: linear-gradient(83deg, rgba(34,26,62,1) 25%, rgba(135,135,131,1) 100%, rgba(180,180,59,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#221a3e",endColorstr="#677232",GradientType=1);
 }
-
 .container-grid{
     display: grid;
     grid-template-rows: 120px 70vh 200px;
@@ -23,44 +26,61 @@ body{
 }
 
 
-
 /*pie de pagina*/
 .logo{
-    height: 100px; 
-    width: 230px;
-    margin-left: 1.3rem;
+    height: 80px; 
+    width: 250px;
     position: relative;
-    left: 6px;   
+    left: 10px;
+           
 }
 .header{
     background-color: rgb(0, 0, 0);   
-    padding: 1.6rem;
+    padding: 3rem;
     display: flex; 
-    grid-area: header; 
+    grid-area: header;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(83deg, rgba(0,0,0,1) 52%, rgba(232,232,225,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    background: -webkit-linear-gradient(83deg, rgba(0,0,0,1) 52%, rgba(232,232,225,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    background: linear-gradient(83deg, rgba(0,0,0,1) 52%, rgba(232,232,225,1) 100%, rgba(121,121,121,1) 100%, rgba(251,251,251,1) 100%, rgba(35,38,6,1) 100%, rgba(43,58,20,1) 100%, rgba(48,64,11,1) 100%, rgba(43,63,12,1) 100%, rgba(57,83,19,1) 100%, rgba(57,83,19,1) 100%, rgba(103,114,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#677232",GradientType=1); 
 }
 .nav{ 
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*adicionado hoy*/
     align-items: center;  
     justify-content: space-between;
     width: 100%;
+    
 }
  
 
 /*MENU*/
 ul li a{
-    flex: auto;
+    flex:auto; /*adicionado hoy*/
     text-decoration: none;
-    font-size: 1.7rem;
-    color: rgb(255, 255, 255);  
+    font-size: 340%;
+    color: rgb(255, 255, 255);
+    transition: all 0.6s;
+
 }
 
-.nav ul{
+a:hover{
+    color: rgb(58, 21, 21);
+    font-size: 1.3rem;
+}
+
+li {
+    font-size: 50%;
+
+}
+
+.nav ul{  /*adicionado hoy*/
     display: flex;
-    flex: auto;
+    flex: auto; /*adicionado hoy*/
     justify-content: space-around;
     width: 60%;
-    list-style-type: none;
+    list-style-type: none; /*adicionado hoy*/
 }
 
 
@@ -68,36 +88,45 @@ ul li a{
 h2{
     text-align: center;
     padding: 20px;
-    margin: 10;
+    margin: 10px;
+    margin-top: 0px;
+    color: rgb(51, 39, 39);
+    background-color: aliceblue;
+
+    
 }
 
 /*Parrafos en la pagina NOSOTROS*/
 
 p{
-    padding: 2rem;
+    padding: 12rem;
     margin: 2rem;
     margin-left: 1rem;
-    color: rgb(0, 0, 0);
-    font-size: 1.3rem;
+    color: rgb(7, 7, 7);
+    font-size: 1.8rem;
 }
 
 /*Lista de Servicios*/
 .listas{
     list-style-position: inside;
     list-style-type: numbers;
-    line-height: 2;
-    color:aqua;   
+    line-height: 2rem;
+    color:aqua;
+    font-size: 0.9rem;   
 }
 
 /*Color de los Servicios*/
 .servicios{
-    color: rgb(190, 182, 137)
+    color: rgb(245, 208, 2);
+    width: 30%;
+
 }
 
 /*Bordes de las imagenes en CONTENIDOS*/
 .bordesRedondos{
-    height: 250px;
-    border-radius: 35%; 
+    height: 270px;
+    border-radius: 15%;
+    padding: 2rem; 
     
 }
 
@@ -125,7 +154,9 @@ p{
     background: url(../imagenes/ensamble_motor.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    grid-area: portada;  
+    grid-area: portada; 
+    color: rgb(30, 30, 32);
+    
 }
 
 
@@ -139,32 +170,32 @@ p{
     grid-area: footer; 
 }
 
+
+/*RESPONSIVE*/
 @media screen and (max-width: 1300px) {
-    .nav ul{
-        width: 100%;
+.nav ul {
+    width: 100%;     
     }
-    ul li a{
-        font-size: 1rem;
+ul li a {
+    font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .container-grid{
+    .contanider-grid {
         grid-template-rows: 220px 70vh 200px;
     }
-    .nav { 
+    .nav {
         flex-direction: column;
     }
     .logo {
         margin-left: auto;
         left: 0;
     }
-    .nav ul{
+    .nav ul {
         display: grid;
         grid-template-columns: auto auto;
         margin-top: 10px;
+
     }
-    ul li {
-        margin-top: 10px;
-    }   
 }
