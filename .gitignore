@@ -3,3 +3,4 @@
 
 git remote add origin https://github.com/FabianHakshuro/Nahuelbuta_Motors.git
 git branch -M master
+.DS_Store
