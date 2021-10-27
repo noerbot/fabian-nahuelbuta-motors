@@ -1,0 +1,115 @@
+.header .nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative; }
+  .header .nav ul {
+    display: flex;
+    flex: auto;
+    /*revisar*/
+    justify-content: space-around;
+    width: 2rem;
+    list-style-type: none; }
+    .header .nav ul li {
+      font-size: 2rem; }
+      .header .nav ul li a {
+        flex: auto;
+        /*revisar*/
+        text-decoration: none;
+        font-size: 3rem;
+        transition: all 0.6s; }
+        .header .nav ul li a:hover {
+          color: #3a1515;
+          font-size: 1.3rem; }
+
+.container {
+  margin: auto;
+  display: flex;
+  width: 80vw;
+  border: solid;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1400px) {
+  .nav ul {
+    width: 100%; }
+  ul li a {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 800px) {
+  .contanider-grid {
+    grid-template-rows: 220px 70vh 200px; }
+  .nav {
+    flex-wrap: wrap; }
+  .logo {
+    margin-left: auto;
+    left: 0; }
+  .nav ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px; } }
+
+/*SERVICIOS*/
+.listas {
+  list-style-position: inside;
+  list-style-type: numbers;
+  line-height: 2rem;
+  color: aqua;
+  font-size: 0.9rem; }
+  .listas .servicios {
+    color: #f5d002;
+    width: 30%; }
+
+h4 {
+  text-align: center;
+  color: white; }
+  h4 h3 {
+    text-align: center;
+    color: #221e1e; }
+    h4 h3 h2 {
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      margin-top: 0px;
+      color: #332727;
+      background-color: aliceblue; }
+
+/*Parrafos en la pagina NOSOTROS*/
+p {
+  padding: 12rem;
+  margin: 2rem;
+  color: #b85858;
+  font-size: 1.8rem; }
+
+/*Lista de Servicios*/
+/*Bordes de las imagenes en CONTENIDOS*/
+.bordesRedondos {
+  height: 270px;
+  border-radius: 15%;
+  padding: 2rem; }
+
+/*Imagen NOSOTROS*/
+.imagen {
+  margin: 0;
+  padding: 12rem;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../imagenes/logo33.jpg); }
+
+/*Imagen CONTACTENOS*/
+.imagenPortada {
+  width: 100%;
+  height: 80vh;
+  background-size: cover; }
+
+/*Footer*/
+.piePagina {
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #9b9455;
+  font-size: 30px;
+  color: #5151af;
+  grid-area: footer; }
